@@ -5,10 +5,13 @@
 #include ./ignoremake
 
 .SILENT: silent-error
+.SUFFIXES: .c .o
 
 NAME = sal
 
-all: all error
+all: macros-and-commands all-error print suffixs
+
+.c.o:
 
 macros-and-commands:
 	echo $(NAME)
