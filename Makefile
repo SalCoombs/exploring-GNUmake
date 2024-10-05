@@ -1,3 +1,4 @@
+# Must be included so that a different version of make is not accidentaly run i think.
 .POISX:
 
 #if included all errors will be ignored
@@ -7,8 +8,7 @@
 
 NAME = sal
 
-all:
-
+all: all error
 
 macros-and-commands:
 	echo $(NAME)
