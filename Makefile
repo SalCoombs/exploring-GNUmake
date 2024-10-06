@@ -4,6 +4,8 @@
 #if included all errors will be ignored
 #include ./ignoremake
 
+# Checking Vs git
+
 .SILENT: silent-error
 .SUFFIXES: .c .o
 
